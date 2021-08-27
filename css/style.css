@@ -583,11 +583,12 @@ header{
     .about .banner a{
         text-decoration: none;
         color: var(--main-color);
-        padding: 15px 20px;
+        padding: 15px 13px;
         background-color: white;
         font-weight: 600;
         border-radius: 15px;
         box-sizing: border-box;
+        font-size: .8rem;
     }
     .contact form .box-input input{
         width: 100%;
