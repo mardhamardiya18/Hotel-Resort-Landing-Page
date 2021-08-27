@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&family=Roboto:wght@300;400;700&family=Philosopher:wght@700&display=swap');
+
+:root{
+    --second-color: #f368f3;
+    --main-color: #a52ad6;
+    --text-color: #78DEC7;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #7deeff48;
+}
+section{
+    padding: 10rem 12% 0 12%;
+}
+
+header{
+    padding: 3rem 12%;
+}
+
+/* Navbar Start */
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 100;
+    padding: 2rem 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.header.show{
+    background-color: rgb(255, 255, 255);
+    transition: .5s ease;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+}
+.header a{
+    text-decoration: none;
+    
+}
+.header .logo {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.header .logo span{
+    color: var(--second-color);
+}
+.header .navbar a{
+    color: #535353;
+    margin-left: 3.3rem;
+    font-weight: 600;
+    padding-bottom: 7px;
+   
+}
+.active{
+    border-bottom: 4px solid var(--main-color);
+    
+    
+}
+
+#menu{
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Navbar end */
+
+/* home start */
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+.home .content i{
+    font-size: 1.5em;
+    color: rgb(228, 228, 7);
+    margin-bottom: 10px;
+}
+.home .content h3{
+    font-family: 'Philosopher', sans-serif;
+    color: var(--main-color);
+    font-size: 4em;
+}
+.content h3 span{
+    font-family: 'Heebo',sans-serif;
+    font-weight: 400;
+    font-size: .3em;
+}
+.home .content p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 3em;
+    letter-spacing: 5px;
+    color: #535353;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    margin-top: 2rem;
+    display: inline-block;
+    font-weight: 400;
+}
+.btn:hover{
+    background-color: rgb(83, 4, 136);
+    transition: .4s ease;
+}
+.home-slider{
+    margin-top: 100px;
+}
+.home-slider .swiper-slide{
+    overflow: hidden;
+    width: 25em;
+    height: 31.5em;
+    border-radius: 15px;
+}
+.home-slider .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* home end */
+
+/* service start */
+.service .heading{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Heebo',sans-serif;
+    color: var(--main-color);
+}
+.service .subheading{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2em;
+    color: #535353;
+}
+
+.service .box-container{
+    margin-top: 100px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+   gap: 1.5rem
+}
+.box-container .box{
+    padding: 3rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    text-align: center;
+}
+.box-container .box i{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    font-size: 1.3em;
+    color: white;
+    background-color: var(--main-color);
+}
+.box-container .box h3{
+    font-family: 'heebo', sans-serif;
+    margin: 1.1rem auto;
+    color: #535353;
+}
+.box-container .box p{
+    font-size: .9rem;
+    color: #535353;
+}
+ 
+/* service end */
+
+/* about start */
+.about .heading{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Heebo',sans-serif;
+    color: var(--main-color);
+}
+.about .subheading{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2em;
+    color: #535353;
+}
+.about .content-wrapper{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+.about .content-wrapper .image{
+ flex: 1 1 45rem;
+ padding: 1rem;
+}
+.content-wrapper .image img{
+    width: 100%;
+}
+.content-wrapper .content{
+    flex: 1 1 45rem;
+}
+.content-wrapper .content h3{
+    font-size: 3em;
+    font-family: 'Heebo', sans-serif;
+    line-height: 3.5rem;
+}
+.content-wrapper .content p{
+    font-size: 1.2em;
+    color: #535353;
+    padding: 1rem 0;
+    line-height: 30px;
+}
+.content-wrapper .content .btn-contact{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.about .banner{
+    width: 100%;
+    height: 150px;
+    padding: 60px 150px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: var(--main-color);
+   border-radius: 10px;
+  
+}
+.about .banner h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.about .banner p{
+    font-size: 1.1rem;
+    color: white;
+    line-height: 2em;
+}
+.about .banner a{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 15px 40px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+}
+
+
+/* about end */
+
+/* gallery start */
+.gallery .heading{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Heebo',sans-serif;
+    color: var(--main-color);
+}
+.gallery .subheading{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2em;
+    color: #535353;
+}
+.gallery .box-container-gallery{
+    margin-top: 100px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+   gap: 1.5rem
+}
+.gallery .box-container-gallery  .box-gallery{
+    position: relative;
+    border: .6rem solid rgba(211, 12, 211, 0.294);
+    border-radius: .3rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gallery .box-container-gallery  .box-gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s ease-in;
+}
+.gallery .box-container-gallery  .box-gallery:hover img{
+ transform: scale(1.1);
+ filter: grayscale();
+}
+.gallery .box-container-gallery  .box-gallery .title{
+    position: absolute;
+   top: -10rem; left: 0; right: 0;
+   text-align: center;
+   padding-bottom: 1rem;
+   background-color: var(--main-color);
+   font-size: 1.2rem;
+   color: white;
+   font-family: 'Heebo', sans-serif;
+   transition: .3s ease-in-out;
+}
+.gallery .box-container-gallery  .box-gallery:hover .title{
+    top: 0;
+}
+.gallery .box-container-gallery  .box-gallery .icons{
+    position: absolute;
+    bottom: -10rem;right: 0; left: 0;
+    background-color: var(--main-color);
+    padding-top: 1rem;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+.gallery .box-container-gallery  .box-gallery:hover .icons{
+    bottom: 0;
+}
+.gallery .box-container-gallery .box-gallery .icons a{
+    font-size: 1.2rem;
+    color: white;
+    margin: .5rem 1rem;
+    display: inline-block;
+}
+.gallery .box-container-gallery .box-gallery .icons a:hover{
+    transform: translateY(-20%) scale(1.4);
+    transition: .3s ease-in-out;
+}
+
+/* gallery end */
+
+/* contact start */
+.contact .heading{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Heebo',sans-serif;
+    color: var(--main-color);
+}
+.contact .subheading{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2em;
+    color: #535353;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+.contact form .box-input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .box-input input,
+.contact form textarea{
+    width: 100%;
+    background-color: rgb(63, 62, 62);
+    padding: 1rem;
+    margin: .7rem 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+.contact form .box-input input::placeholder,
+.contact form textarea::placeholder{
+    color: rgba(240, 240, 240, 0.616);
+    text-transform: capitalize;
+}
+.contact form .box-input input:focus,
+.contact form textarea:focus{
+    background-color: rgb(109, 109, 109);
+   outline: none;
+   color: white;
+}
+.contact form .box-input input{
+    width: 49%;
+}
+.contact form .btn-mail{
+    padding: 15px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* contact end */
+
+/* footer start */
+.footer{
+    margin-top: 200px;
+    width: 100%;
+    padding: 7rem 10rem;
+}
+.footer .footer-container{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-container .brand{
+    line-height: 40px;
+}
+.footer-container .brand .logo{
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.footer-container .brand .sosmed a i{
+    font-size: 2rem;
+    margin: .7rem 6px;
+}
+.footer-container .location, .service, .explore, .company{
+    color: #535353;
+}
+.footer-container .location h3{
+    font-size: 1.5rem;
+    font-family: 'Heebo',sans-serif;
+}
+.footer-container .location ul{
+    margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+.footer-container .service h3{
+    font-size: 1.5rem;
+    font-family: 'Heebo',sans-serif;
+}
+.footer-container .service ul{
+    margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+.footer-container .explore h3{
+    font-size: 1.5rem;
+    font-family: 'Heebo',sans-serif;
+}
+.footer-container .explore ul{
+    margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+.footer-container .explore ul li a{
+    text-decoration: none;
+    color: #535353;
+}
+.footer-container .company h3{
+    font-size: 1.5rem;
+    font-family: 'Heebo',sans-serif;
+}
+.footer-container .company ul{
+    margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+.footer-container .company ul li a{
+    text-decoration: none;
+    color: #535353;
+}
+/* footer end */
+
+@media screen and (max-width: 991px) {
+    html{
+        font-size: 90%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .navbar a{
+        color: #000000;
+        margin-left: 1.7rem;
+    }
+    .about .banner{
+        padding: 60px 100px;
+    }
+    .footer{
+        margin-top: 200px;
+        width: 100%;
+        padding: 7rem 5rem;
+    }
+    .footer .footer-container{
+        gap: 20px;
+    }
+}
+    
+@media screen and (max-width: 768px){
+    html{
+        font-size: 80%;
+    }
+    #menu{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+       top: 100%; 
+       left: 50%;
+       transform: translateX(-50%);
+       width: 80%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: white;
+        transition: .3s ease-in-out;
+        
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .fa-times{
+        transform: rotate(180deg);
+        transition: .5s ease;
+    }
+    
+    .header .navbar a{
+        display: flex;
+        background-color: var(--main-color);
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        
+    }
+    .about .banner{
+        padding: 40px 70px;
+    }
+
+    
+}
+@media screen and (max-width: 450px){
+    html{
+        font-size: 70%;
+    }
+    .home .content h3{
+        font-size: 3.3em;
+    }
+    .content h3 span{
+        display: none;
+    }
+    .home .content p{
+        letter-spacing: .2em;
+    }
+    .content-wrapper .content h3{
+        font-size: 2em;
+        font-family: 'Heebo', sans-serif;
+        line-height: 3rem;
+    }
+    .about .banner{
+        padding: 10px 40px;
+      
+    }
+    .banner .caption{
+        width: 60%;
+    }
+    .about .banner a{
+        text-decoration: none;
+        color: var(--main-color);
+        padding: 15px 20px;
+        background-color: white;
+        font-weight: 600;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+    .contact form .box-input input{
+        width: 100%;
+    }
+    .footer{
+        margin-top: 200px;
+        width: 100%;
+        padding: 7rem 5rem;
+    }
+    .footer .footer-container{
+        gap: 20px;
+    }
+}
