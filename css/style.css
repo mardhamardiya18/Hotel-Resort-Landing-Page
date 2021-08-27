@@ -416,9 +416,11 @@ header{
 
 /* footer start */
 .footer{
+    position: relative;
     margin-top: 200px;
     width: 100%;
     padding: 7rem 10rem;
+    padding-bottom: 5rem;
 }
 .footer .footer-container{
     max-width: 90%;
@@ -486,6 +488,16 @@ header{
 .footer-container .company ul li a{
     text-decoration: none;
     color: #535353;
+}
+.copyright{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Heebo', sans-serif;
+    color: white;    
+    background-color: magenta;
+    text-align: center;
 }
 /* footer end */
 
