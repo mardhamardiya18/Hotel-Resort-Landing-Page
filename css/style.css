@@ -239,6 +239,10 @@ header{
     margin-top: 20px;
     display: inline-block;
 }
+.content-wrapper .content .btn-contact:hover{
+    background-color: rgb(80, 8, 163);
+    transition: .4s ease;
+}
 
 .about .banner{
     width: 100%;
@@ -273,6 +277,11 @@ header{
     border-radius: 15px;
     box-sizing: border-box;
 
+}
+.about .banner a:hover{
+    background-color: rgb(59, 11, 136);
+    color: white;
+    transition: .3s ease;
 }
 
 
@@ -411,6 +420,11 @@ header{
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+.contact form .btn-mail:hover{
+    background-color: rgb(107, 8, 165);
+    color: white;
+    transition: .4s ease;
+}
 
 /* contact end */
 
@@ -441,6 +455,10 @@ header{
 .footer-container .brand .sosmed a i{
     font-size: 2rem;
     margin: .7rem 6px;
+}
+.footer-container .brand .sosmed a i:hover{
+    transform: translateY(-10px) scale(1.05);
+    transition: .4s ease-in-out;
 }
 .footer-container .location, .service, .explore, .company{
     color: #535353;
